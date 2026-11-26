@@ -436,7 +436,7 @@ void IRFitEditor::showMoreMenu()
             dialog->enterModalState (true, juce::ModalCallbackFunction::create ([this] (int res)
             {
                 const auto nm = dialog ? dialog->getTextEditorContents ("name") : juce::String();
-                juce::MessageManager::callAsync ([sp = juce::Component::SafePointer<IRFitEditor> (this)] { if (sp) sp->dialog.reset(); });
+                { juce::Component::SafePointer<IRFitEditor> sp (this); juce::MessageManager::callAsync ([sp] { if (sp) sp->dialog.reset(); }); }   // (MSVC: no `this` in a nested init-capture)
                 if (res == 1 && nm.trim().isNotEmpty()) proc.newFolder (nm);
             }), false);
         }
@@ -473,7 +473,7 @@ void IRFitEditor::saveAsDialog()
     {
         juce::String nm, fo;
         if (dialog) { nm = dialog->getTextEditorContents ("name"); if (auto* cb = dialog->getComboBoxComponent ("folder")) fo = cb->getText(); }
-        juce::MessageManager::callAsync ([sp = juce::Component::SafePointer<IRFitEditor> (this)] { if (sp) sp->dialog.reset(); });
+        { juce::Component::SafePointer<IRFitEditor> sp (this); juce::MessageManager::callAsync ([sp] { if (sp) sp->dialog.reset(); }); }   // (MSVC: no `this` in a nested init-capture)
         if (res == 1 && nm.trim().isNotEmpty())
         {
             const auto f = proc.bank.folderDir (fo).getChildFile (irfit::PresetBank::legalName (nm) + irfit::PresetBank::kExt);
@@ -561,7 +561,7 @@ void IRFitEditor::batchDialog (const juce::File& dir)
             if (auto* cb = dialog->getComboBoxComponent ("lab")) s.toLab = cb->getSelectedItemIndex() == 0;
             if (auto* cb = dialog->getComboBoxComponent ("again")) s.skipDone = cb->getSelectedItemIndex() == 0;
         }
-        juce::MessageManager::callAsync ([sp = juce::Component::SafePointer<IRFitEditor> (this)] { if (sp) sp->dialog.reset(); });
+        { juce::Component::SafePointer<IRFitEditor> sp (this); juce::MessageManager::callAsync ([sp] { if (sp) sp->dialog.reset(); }); }   // (MSVC: no `this` in a nested init-capture)
         if (res != 1) return;
         const auto err = proc.startBatch (dir, s);
         if (err.isNotEmpty()) { status.setText ("Batch: " + err, juce::dontSendNotification); reportUntil = juce::Time::getMillisecondCounterHiRes() + 8000; }
