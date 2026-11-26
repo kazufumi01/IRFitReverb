@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
-project(IRFitTest VERSION 0.3.2)
+project(IRFitTest VERSION 1.0.0)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
@@ -37,7 +37,7 @@ target_compile_definitions(IRFitTest PRIVATE
   JUCE_WEB_BROWSER=0
   JUCE_USE_CURL=0
   JucePlugin_Name="IR Fit Reverb"
-  JucePlugin_VersionString="0.3.2"
+  JucePlugin_VersionString="1.0.0"
   JUCE_STANDALONE_APPLICATION=1
   JUCE_MODAL_LOOPS_PERMITTED=1)
 target_link_libraries(IRFitTest PRIVATE juce::juce_audio_utils juce::juce_dsp juce::juce_recommended_config_flags)

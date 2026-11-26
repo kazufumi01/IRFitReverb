@@ -1,9 +1,9 @@
 ﻿; IR Fit Reverb — Windows インストーラー（Inno Setup 6）
-; GitHub Actions から:  iscc /DMyAppVersion=0.3.2 /DArtDir=..\..\build\IRFitReverb_artefacts\Release packaging\win\installer.iss
+; GitHub Actions から:  iscc /DMyAppVersion=1.0.0 /DArtDir=..\..\build\IRFitReverb_artefacts\Release packaging\win\installer.iss
 ; 出力: dist\IRFitReverb-<ver>-win64.exe （コード署名なし）
 
 #ifndef MyAppVersion
-  #define MyAppVersion "0.3.2"
+  #define MyAppVersion "1.0.0"
 #endif
 #ifndef ArtDir
   #define ArtDir "..\..\build\IRFitReverb_artefacts\Release"

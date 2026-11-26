@@ -10,10 +10,10 @@
 
 | ファイル | 内容 |
 |---|---|
-| [`IRFitReverb-0.3.2-mac.zip`](https://github.com/kazufumi01/IRFitReverb/releases/latest/download/IRFitReverb-0.3.2-mac.zip) | Mac・手動インストール（おすすめ） |
-| [`IRFitReverb-0.3.2-mac.pkg`](https://github.com/kazufumi01/IRFitReverb/releases/latest/download/IRFitReverb-0.3.2-mac.pkg) | Mac・インストーラー（ターミナルを使いたくない人向け） |
-| [`IRFitReverb-0.3.2-win64.zip`](https://github.com/kazufumi01/IRFitReverb/releases/latest/download/IRFitReverb-0.3.2-win64.zip) | Windows・手動インストール（未検証） |
-| [`IRFitReverb-0.3.2-win64.exe`](https://github.com/kazufumi01/IRFitReverb/releases/latest/download/IRFitReverb-0.3.2-win64.exe) | Windows・インストーラー（未検証） |
+| [`IRFitReverb-1.0.0-mac.zip`](https://github.com/kazufumi01/IRFitReverb/releases/latest/download/IRFitReverb-1.0.0-mac.zip) | Mac・手動インストール（おすすめ） |
+| [`IRFitReverb-1.0.0-mac.pkg`](https://github.com/kazufumi01/IRFitReverb/releases/latest/download/IRFitReverb-1.0.0-mac.pkg) | Mac・インストーラー（ターミナルを使いたくない人向け） |
+| [`IRFitReverb-1.0.0-win64.zip`](https://github.com/kazufumi01/IRFitReverb/releases/latest/download/IRFitReverb-1.0.0-win64.zip) | Windows・手動インストール（未検証） |
+| [`IRFitReverb-1.0.0-win64.exe`](https://github.com/kazufumi01/IRFitReverb/releases/latest/download/IRFitReverb-1.0.0-win64.exe) | Windows・インストーラー（未検証） |
 
 ---
 

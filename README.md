@@ -8,12 +8,12 @@ by Johan Plus Kei — IR（インパルスレスポンス）の響きを**アル
 
 ## ⬇️ ダウンロード / Download
 
-**[最新版をダウンロード / Download latest](https://github.com/kazufumi01/IRFitReverb/releases/latest)** — 無料配布中（β）/ Free (beta)
+**[最新版をダウンロード / Download latest](https://github.com/kazufumi01/IRFitReverb/releases/latest)** — 無料配布中 / Free
 
 | | 手動インストール（おすすめ） | インストーラー |
 |---|---|---|
-| **Mac**（macOS 11+, Apple Silicon / Intel） | [`IRFitReverb-0.3.2-mac.zip`](https://github.com/kazufumi01/IRFitReverb/releases/latest/download/IRFitReverb-0.3.2-mac.zip) | [`IRFitReverb-0.3.2-mac.pkg`](https://github.com/kazufumi01/IRFitReverb/releases/latest/download/IRFitReverb-0.3.2-mac.pkg) |
-| **Windows**（10 / 11, 64bit）⚠️未検証 | [`IRFitReverb-0.3.2-win64.zip`](https://github.com/kazufumi01/IRFitReverb/releases/latest/download/IRFitReverb-0.3.2-win64.zip) | [`IRFitReverb-0.3.2-win64.exe`](https://github.com/kazufumi01/IRFitReverb/releases/latest/download/IRFitReverb-0.3.2-win64.exe) |
+| **Mac**（macOS 11+, Apple Silicon / Intel） | [`IRFitReverb-1.0.0-mac.zip`](https://github.com/kazufumi01/IRFitReverb/releases/latest/download/IRFitReverb-1.0.0-mac.zip) | [`IRFitReverb-1.0.0-mac.pkg`](https://github.com/kazufumi01/IRFitReverb/releases/latest/download/IRFitReverb-1.0.0-mac.pkg) |
+| **Windows**（10 / 11, 64bit）⚠️未検証 | [`IRFitReverb-1.0.0-win64.zip`](https://github.com/kazufumi01/IRFitReverb/releases/latest/download/IRFitReverb-1.0.0-win64.zip) | [`IRFitReverb-1.0.0-win64.exe`](https://github.com/kazufumi01/IRFitReverb/releases/latest/download/IRFitReverb-1.0.0-win64.exe) |
 
 - インストール方法：**[INSTALL.md](INSTALL.md)**（日本語 / English）
 - ⚠️ **Windows 版は実機での動作確認ができていません**（自動ビルドで作成。VST3 と Standalone）。 / The Windows build is untested on real hardware.

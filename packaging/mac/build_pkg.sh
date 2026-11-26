@@ -1,13 +1,13 @@
 #!/bin/zsh
 # IR Fit Reverb の Mac 用インストーラー（.pkg）を作る
 # 使い方： packaging/mac/build_pkg.sh [バージョン] [ビルド成果物フォルダ]
-#   例）packaging/mac/build_pkg.sh 0.3.2 build/IRFitReverb_artefacts/Release
+#   例）packaging/mac/build_pkg.sh 1.0.0 build/IRFitReverb_artefacts/Release
 # 出力：dist/IRFitReverb-<ver>-mac.pkg
 # ※ 署名・公証なし（Apple Developer Program 未加入でも作れる）
 set -e
 cd "$(dirname "$0")/../.."
 
-VERSION="${1:-0.3.2}"
+VERSION="${1:-1.0.0}"
 ART="${2:-build/IRFitReverb_artefacts/Release}"
 NAME="IR Fit Reverb"
 ID="com.jpk.irfitreverb"
